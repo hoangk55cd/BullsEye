@@ -17,6 +17,7 @@
 		40AC12721DFFC53C009A4F95 /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC12711DFFC53C009A4F95 /* BullsEyeTests.swift */; };
 		40AC129E1DFFD2C0009A4F95 /* BullsEyeMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC129D1DFFD2C0009A4F95 /* BullsEyeMockTests.swift */; };
 		40AC12AC1DFFD3E2009A4F95 /* BullsEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC12AB1DFFD3E2009A4F95 /* BullsEyeUITests.swift */; };
+		66C778E4222F7977002972A0 /* CheckO.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C778E3222F7977002972A0 /* CheckO.m */; };
 		6E70C0509D6D561AFAC593CE /* Pods_BullsEyeMockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1089E15B3951C3045A50DCA /* Pods_BullsEyeMockTests.framework */; };
 		A9FCCFD9215FEF2B721A540E /* Pods_BullsEyeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0182D78D8EF25A4260EB88C /* Pods_BullsEyeUITests.framework */; };
 		E53195C48264FD82FEF47851 /* Pods_BullsEye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276BA15674A88ACB5EEE3FA2 /* Pods_BullsEye.framework */; };
@@ -70,6 +71,9 @@
 		40AC12AD1DFFD3E2009A4F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		540FD85FED350CB50AA0BA04 /* Pods-BullsEye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BullsEye.release.xcconfig"; path = "Pods/Target Support Files/Pods-BullsEye/Pods-BullsEye.release.xcconfig"; sourceTree = "<group>"; };
 		588262647B42D267C05B4645 /* Pods-BullsEyeMockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BullsEyeMockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BullsEyeMockTests/Pods-BullsEyeMockTests.release.xcconfig"; sourceTree = "<group>"; };
+		66C778E1222F7977002972A0 /* BullsEye-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BullsEye-Bridging-Header.h"; sourceTree = "<group>"; };
+		66C778E2222F7977002972A0 /* CheckO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckO.h; sourceTree = "<group>"; };
+		66C778E3222F7977002972A0 /* CheckO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckO.m; sourceTree = "<group>"; };
 		79ACEA328BF625CAC78ED61A /* Pods-BullsEyeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BullsEyeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BullsEyeUITests/Pods-BullsEyeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F577D93BE9AEFD6D4B1C23F /* Pods_BullsEyeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BullsEyeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6044FF21F77E8486B3373C /* Pods-BullsEyeMockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BullsEyeMockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BullsEyeMockTests/Pods-BullsEyeMockTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +152,9 @@
 				40907E301CA8C0C500CAB5AC /* Assets.xcassets */,
 				40907E321CA8C0C500CAB5AC /* LaunchScreen.storyboard */,
 				40907E351CA8C0C500CAB5AC /* Info.plist */,
+				66C778E2222F7977002972A0 /* CheckO.h */,
+				66C778E3222F7977002972A0 /* CheckO.m */,
+				66C778E1222F7977002972A0 /* BullsEye-Bridging-Header.h */,
 			);
 			path = BullsEye;
 			sourceTree = "<group>";
@@ -296,7 +303,7 @@
 				TargetAttributes = {
 					40907E251CA8C0C500CAB5AC = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 1010;
 					};
 					40AC126E1DFFC53C009A4F95 = {
 						CreatedOnToolsVersion = 8.1;
@@ -402,6 +409,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BullsEye/Pods-BullsEye-frameworks.sh",
+				"${PODS_ROOT}/Dynatrace/iOS/agent/Dynatrace.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -409,6 +417,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dynatrace.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -490,6 +499,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C778E4222F7977002972A0 /* CheckO.m in Sources */,
 				40907E2C1CA8C0C500CAB5AC /* ViewController.swift in Sources */,
 				40907E2A1CA8C0C500CAB5AC /* AppDelegate.swift in Sources */,
 				40907E3C1CA8EAA200CAB5AC /* BullsEyeGame.swift in Sources */,
@@ -653,10 +663,19 @@
 			baseConfigurationReference = 222EF4D39822A1BAE11D5D00 /* Pods-BullsEye.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"\"${PODS_ROOT}/Dynatrace/iOS/agent\"",
+				);
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BullsEye/BullsEye-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -666,10 +685,18 @@
 			baseConfigurationReference = 540FD85FED350CB50AA0BA04 /* Pods-BullsEye.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"\"${PODS_ROOT}/Dynatrace/iOS/agent\"",
+				);
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BullsEye/BullsEye-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -799,6 +826,7 @@
 				40AC12771DFFC53C009A4F95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40AC12A21DFFD2C0009A4F95 /* Build configuration list for PBXNativeTarget "BullsEyeMockTests" */ = {
 			isa = XCConfigurationList;
@@ -807,6 +835,7 @@
 				40AC12A41DFFD2C0009A4F95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		40AC12B01DFFD3E2009A4F95 /* Build configuration list for PBXNativeTarget "BullsEyeUITests" */ = {
 			isa = XCConfigurationList;
@@ -815,6 +844,7 @@
 				40AC12B21DFFD3E2009A4F95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

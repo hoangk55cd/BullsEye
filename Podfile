@@ -8,7 +8,7 @@ target 'BullsEye' do
   # Pods for BullsEye
 	pod 'SwiftyJSON', '4.0.0'
 	pod 'IQKeyboardManagerSwift'
-
+    pod 'Dynatrace'
 
   target 'BullsEyeMockTests' do
     inherit! :search_paths

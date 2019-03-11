@@ -101,7 +101,7 @@ class ViewController: UIViewController {
     let title = "you scored \(game.scoreRound) points"
     let message = "target value \(game.targetValue)"
     let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-    
+    let mes = CheckO().checkOBCTest()
     let action = UIAlertAction(title: "OK", style: .default, handler: { action in
       self.game.startNewRound()
       self.updateView()
