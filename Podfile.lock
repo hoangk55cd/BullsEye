@@ -1,14 +1,14 @@
 PODS:
-  - Dynatrace (7.2.3.1222):
-    - Dynatrace/framework (= 7.2.3.1222)
-  - Dynatrace/framework (7.2.3.1222)
-  - IQKeyboardManagerSwift (6.2.0)
-  - SwiftyJSON (4.0.0)
+  - Dynatrace (7.2.4.1229):
+    - Dynatrace/framework (= 7.2.4.1229)
+  - Dynatrace/framework (7.2.4.1229)
+  - IQKeyboardManagerSwift (6.2.1)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Dynatrace
   - IQKeyboardManagerSwift
-  - SwiftyJSON (= 4.0.0)
+  - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -17,10 +17,10 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Dynatrace: f90b33034912cdbc5d35ac4e5c991d9afdfdcc64
-  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
-  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  Dynatrace: d1dbc7eae3b89adead8c781c0fe3d88060c3500a
+  IQKeyboardManagerSwift: 0f0ae8935360b4003e6ea1ac7c19898f01e2f7c7
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 0dd5c106707c60822f6ab617b863e1f32a5a3658
+PODFILE CHECKSUM: 315ef13128bee7be8efce0fcf206abaee8b517fd
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
