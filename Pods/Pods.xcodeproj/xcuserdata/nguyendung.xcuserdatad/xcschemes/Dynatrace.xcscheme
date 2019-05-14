@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4A4B3671C7C537DB20E631CDFEC35951"
-               BuildableName = "Pods-BullsEyeUITests.framework"
-               BlueprintName = "Pods-BullsEyeUITests"
+               BlueprintIdentifier = "8697BD0E618FD77F28D9845B5479BB1F"
+               BuildableName = "Dynatrace"
+               BlueprintName = "Dynatrace"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
