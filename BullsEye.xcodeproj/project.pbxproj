@@ -17,6 +17,7 @@
 		40AC12721DFFC53C009A4F95 /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC12711DFFC53C009A4F95 /* BullsEyeTests.swift */; };
 		40AC129E1DFFD2C0009A4F95 /* BullsEyeMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC129D1DFFD2C0009A4F95 /* BullsEyeMockTests.swift */; };
 		40AC12AC1DFFD3E2009A4F95 /* BullsEyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AC12AB1DFFD3E2009A4F95 /* BullsEyeUITests.swift */; };
+		4FBA2AA72254A281008CB453 /* Dynatrace.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FBA2AA62254A281008CB453 /* Dynatrace.plist */; };
 		66C778E4222F7977002972A0 /* CheckO.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C778E3222F7977002972A0 /* CheckO.m */; };
 		6E70C0509D6D561AFAC593CE /* Pods_BullsEyeMockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1089E15B3951C3045A50DCA /* Pods_BullsEyeMockTests.framework */; };
 		A9FCCFD9215FEF2B721A540E /* Pods_BullsEyeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0182D78D8EF25A4260EB88C /* Pods_BullsEyeUITests.framework */; };
@@ -69,6 +70,7 @@
 		40AC12A91DFFD3E2009A4F95 /* BullsEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullsEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AC12AB1DFFD3E2009A4F95 /* BullsEyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeUITests.swift; sourceTree = "<group>"; };
 		40AC12AD1DFFD3E2009A4F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FBA2AA62254A281008CB453 /* Dynatrace.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Dynatrace.plist; sourceTree = "<group>"; };
 		540FD85FED350CB50AA0BA04 /* Pods-BullsEye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BullsEye.release.xcconfig"; path = "Pods/Target Support Files/Pods-BullsEye/Pods-BullsEye.release.xcconfig"; sourceTree = "<group>"; };
 		588262647B42D267C05B4645 /* Pods-BullsEyeMockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BullsEyeMockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BullsEyeMockTests/Pods-BullsEyeMockTests.release.xcconfig"; sourceTree = "<group>"; };
 		66C778E1222F7977002972A0 /* BullsEye-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BullsEye-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				40907E2D1CA8C0C500CAB5AC /* Main.storyboard */,
 				40907E301CA8C0C500CAB5AC /* Assets.xcassets */,
 				40907E321CA8C0C500CAB5AC /* LaunchScreen.storyboard */,
+				4FBA2AA62254A281008CB453 /* Dynatrace.plist */,
 				40907E351CA8C0C500CAB5AC /* Info.plist */,
 				66C778E2222F7977002972A0 /* CheckO.h */,
 				66C778E3222F7977002972A0 /* CheckO.m */,
@@ -242,6 +245,7 @@
 				40AC126B1DFFC53C009A4F95 /* Sources */,
 				40AC126C1DFFC53C009A4F95 /* Frameworks */,
 				40AC126D1DFFC53C009A4F95 /* Resources */,
+				34AB41FA71C0469A84388420 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +265,7 @@
 				40AC12971DFFD2C0009A4F95 /* Sources */,
 				40AC12981DFFD2C0009A4F95 /* Frameworks */,
 				40AC12991DFFD2C0009A4F95 /* Resources */,
+				CEED97B3101725D4CB5E017C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,6 +285,7 @@
 				40AC12A51DFFD3E2009A4F95 /* Sources */,
 				40AC12A61DFFD3E2009A4F95 /* Frameworks */,
 				40AC12A71DFFD3E2009A4F95 /* Resources */,
+				D53AA277FA2459AD8BB9128A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,6 +333,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -348,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FBA2AA72254A281008CB453 /* Dynatrace.plist in Resources */,
 				40907E341CA8C0C500CAB5AC /* LaunchScreen.storyboard in Resources */,
 				40907E311CA8C0C500CAB5AC /* Assets.xcassets in Resources */,
 				40907E2F1CA8C0C500CAB5AC /* Main.storyboard in Resources */,
@@ -400,7 +408,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ABE83DEB6BDA48B398BC37A3 /* [CP] Embed Pods Frameworks */ = {
+		34AB41FA71C0469A84388420 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -408,7 +416,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BullsEye/Pods-BullsEye-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BullsEyeTests/Pods-BullsEyeTests-frameworks.sh",
 				"${PODS_ROOT}/Dynatrace/iOS/agent/Dynatrace.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -423,7 +431,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BullsEye/Pods-BullsEye-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BullsEyeTests/Pods-BullsEyeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABE83DEB6BDA48B398BC37A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BullsEye/Pods-BullsEye-frameworks.sh",
+				"${PODS_ROOT}/Dynatrace/iOS/agent/Dynatrace.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dynatrace.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BullsEye/Pods-BullsEye-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BA7DD80901AA166AADADE5DF /* [CP] Check Pods Manifest.lock */ = {
@@ -468,6 +502,58 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEED97B3101725D4CB5E017C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BullsEyeMockTests/Pods-BullsEyeMockTests-frameworks.sh",
+				"${PODS_ROOT}/Dynatrace/iOS/agent/Dynatrace.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dynatrace.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BullsEyeMockTests/Pods-BullsEyeMockTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D53AA277FA2459AD8BB9128A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BullsEyeUITests/Pods-BullsEyeUITests-frameworks.sh",
+				"${PODS_ROOT}/Dynatrace/iOS/agent/Dynatrace.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dynatrace.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BullsEyeUITests/Pods-BullsEyeUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FC7DDBE5086D96E57212541D /* [CP] Check Pods Manifest.lock */ = {
@@ -676,7 +762,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BullsEye/BullsEye-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -697,7 +783,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.BullsEye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "BullsEye/BullsEye-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -713,7 +799,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.BullsEyeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BullsEye.app/BullsEye";
 			};
 			name = Debug;
@@ -729,7 +815,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.BullsEyeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BullsEye.app/BullsEye";
 			};
 			name = Release;
@@ -746,7 +832,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.BullsEyeMockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BullsEye.app/BullsEye";
 			};
 			name = Debug;
@@ -762,7 +848,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.BullsEyeMockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BullsEye.app/BullsEye";
 			};
 			name = Release;
@@ -778,7 +864,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.BullsEyeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = BullsEye;
 			};
 			name = Debug;
@@ -793,7 +879,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.BullsEyeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = BullsEye;
 			};
 			name = Release;

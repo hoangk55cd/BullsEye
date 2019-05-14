@@ -1,5 +1,5 @@
 // Dynatrace.h
-// Version: 7.2.3.1222
+// Version: 7.2.4.1229
 //
 // These materials contain confidential information and
 // trade secrets of Dynatrace Corporation. You shall
@@ -799,6 +799,13 @@ extern NSString *_Nonnull const kDTXInstrumentWebViewTiming;
 extern NSString *_Nonnull const kDTXExcludedControls;
 
 /*
+ DTXExcludedControlClasses(array)
+ An array of items where each item contains the name of a UI control (sub-)class to exclude from automatic instrumentation.
+ Each item in the array is a case-sensitive string that must exactly match the name of the class to be excluded.
+ */
+extern NSString *_Nonnull const kDTXExcludedControlClasses;
+
+/*
  DTXExcludedLifecycleClasses(array)
  An array of items where each item contains the name of a class to exclude from automatic lifecycle instrumentation.
  Each item in the array is a case-sensitive string that must exactly match the name of the class to be excluded.
@@ -920,10 +927,3 @@ extern NSString *_Nonnull const kDTXAgentEnvironment;
  Has to be enabled for Dynatrace Managed only.
  */
 extern NSString *_Nonnull const kDTXManagedCluster;
-
-/*
- DTXExcludedControlClasses(array)
- An array of items where each item contains the name of a UI control (sub-)class to exclude from automatic instrumentation.
- Each item in the array is a case-sensitive string that must exactly match the name of the class to be excluded.
- */
-extern NSString *_Nonnull const kDTXExcludedControlClasses;
