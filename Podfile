@@ -2,9 +2,8 @@
 # platform :ios, '9.0'
 
 def podCollection
-  pod 'SwiftyJSON'
+  pod 'SwiftyJSON', '4.0.0'
   pod 'IQKeyboardManagerSwift'
-  pod 'Dynatrace'
 end
 
 target 'BullsEye' do
